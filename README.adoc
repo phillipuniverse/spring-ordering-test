@@ -1,0 +1,8 @@
+Illustration of bean overriding at different Spring Boot auto configuration levels. This has the same bean named defined in 2 auto configuration classes with `@ConditionalOnMissingBean` based on the type. The idea is that the `@Bean` defined in `SecondConfig` overrides the first.
+
+Run the project with:
+
+[source,console]
+----
+./mvnw test
+----
